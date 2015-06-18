@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :comments
   resources :links do
   member do
     put "like", to: "links#upvote"
     put "dislike", to: "links#downvote"
   end
+  resources :comments
 end
 
   root to: "links#index"
@@ -45,8 +47,7 @@ end
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
-  #     resources :comments
-  #     resources :sales do
+  #     #     resources :sales do
   #       get 'recent', on: :collection
   #     end
   #   end
