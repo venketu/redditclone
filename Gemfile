@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'jquery-rails'
 gem 'turbolinks'
- 	
+gem 'acts_as_votable', '~> 0.10.0'
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'jbuilder', '~> 2.0'
 
